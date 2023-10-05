@@ -51,16 +51,41 @@
   </div>
 </nav>
 
+<h1>Blood Pressure Calculator<h1>
+	
+	<form id="Calculator">
+		<label for = "systolic">Systolic Pressure (mmHg):</label>
+		<input type="number" id="systolic" required><br>
+		
+		<label for = "diastolic">Diastolic Pressure (mmHg):</label>
+		<input type="number" id="diastolic" required><br>
+		
+		<input type="button" id="Calculate MAP" onclick="calculateMAP()">
+	</form>
+	
+	<p>Mean Arterial Pressure (MAP): <span id="result"></span> mmHg</p>
+	
+	<script>
+		function calculateMAP() [
+			var systolicPressure = parseFloat(document.gretElementById('systolic').value);
+			var diastolicPressure = parseFloat(document.gretElementById('diastolic').value);
+			
+			if (!isNaN(systolicPressure) && (!isNaN(diastolicPressure)) {
+				var map = (2 * diastolicPressure + systolicPressure) / 3;
+				document.getElementById('result').innerHTML = map.toFixed(2);
+			} else {
+				alert("Input the correct values.");
+			}
+		}
+	</script>
 
 </main>
-
-<footer></footer>
 </body>
 
 
 
 
-
+<footer></footer>
 
 
 </html>
