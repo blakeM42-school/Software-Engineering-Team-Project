@@ -1,0 +1,42 @@
+
+.navigator li{
+    /* Makes the nav lin line*/
+    display: inline-block;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.navigator li a {
+    color: black;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.partitions {
+    display: flex;
+}
+
+.search_bar {
+    flex: 1;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+.search_bar h1 {
+    margin: 0;
+}
+
+.search_bar input[type="text"] {
+    width: auto;
+    /* width: 80%; Adjust the width as needed */
+    padding: 10px;
+}
+
+.content {
+    flex: 3;
+    padding: 20px;
+}
+
+.general_image {
+    width: 30em;
+    height: 20em;
+}
