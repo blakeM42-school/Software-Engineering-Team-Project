@@ -1,9 +1,8 @@
 
 .navigator {
-    background-color: grey;
     padding: 0;
     margin: 0;
-    
+
 }
 
 .navigator li{
@@ -11,11 +10,15 @@
     display: inline-block;
     font-size: 1.5em;
     text-decoration: none;
+    
+    
 }
 .navigator li a {
     color: black;
-    padding: 0.5em 1em;
+    padding: .5em 1em;
     text-decoration: none;
+    border: 1px solid black;
+    background-color: lightgrey;
 }
 
 .partitions {
@@ -30,13 +33,17 @@
 }
 
 .search_bar h1 {
-    margin: 0;
+    margin: 0px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .search_bar input[type="text"] {
     width: auto;
     /* width: 80%; Adjust the width as needed */
     padding: 10px;
+    align-items: center;
+    
 }
 
 .content {
