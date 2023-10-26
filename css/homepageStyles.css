@@ -1,8 +1,22 @@
-.introduction h2 {
+/* CSS Style Rule Reset */
+
+body, p, h1, h2, h3, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.introduction {
     text-align: center;
 }
 
-.introduction img {
-    
+.introduction p {
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.introduction h2 {
+    border-top: 3px solid black;
 }
 
