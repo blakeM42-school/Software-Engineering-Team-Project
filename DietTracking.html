@@ -1,66 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Group Project - Health</title>
-<meta charset="utf-8">
-<link rel="icon" type="image/x-icon" href="apple.ico">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Group Project - Health</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="apple.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-
-
 <body>
 <header>
-<h1 style="text-align: center">Group Project - Health</h1>
+    <h1 style="text-align: center">Group Project - Health</h1>
 </header>
 
 <main>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="index.html">Health</a>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="index.html">Health</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class=""><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="Exercises.html">Exercises <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Push-Ups</a></li>
+              <li><a href="#">Sit-Ups</a></li>
+              <li><a href="#">Pull-Ups</a></li>
+            </ul>
+          </li>
+          <li><a href="DietTracking.html">Diet Tracking</a></li>
+          <li class="active"><a href="BreathingTechniques.html">Breathing Techniques</a></li>
+      <li><a href="BloodSugarCalculator.html">Blood Sugar Calculator</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class=""><a href="index.html">Home</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="Exercises.html">Exercises <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Push-Ups</a></li>
-            <li><a href="#">Sit-Ups</a></li>
-            <li><a href="#">Pull-Ups</a></li>
-          </ul>
-        </li>
-        <li class="active" ><a href="DietTracking.html">Diet Tracking</a></li>
-        <li><a href="BreathingTechniques.html">Breathing Techniques</a></li>
-		<li><a href="BloodSugarCalculator.html">Blood Sugar Calculator</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+  </nav>
+
+    <div class="container">
+        <h2>Diet Tracking</h2>
+
+        <!-- Form for entering diet information -->
+        <form id="diet-form">
+            <div class="form-group">
+                <label for="food-item">Food Item</label>
+                <input type="text" class="form-control" id="food-item" placeholder="Enter food item">
+            </div>
+            <div class="form-group">
+                <label for="calories">Calories</label>
+                <input type="number" class="form-control" id="calories" placeholder="Enter calories">
+            </div>
+            <button type="button" class="btn btn-primary" id="add-food">Add Food</button>
+        </form>
+
+        <!-- Display the tracked diet -->
+        <div id="diet-tracker">
+            <h3>Your Diet Today</h3>
+            <ul id="food-list">
+                <!-- Diet items will be listed here -->
+            </ul>
+            <p>Total Calories: <span id="total-calories">0</span></p>
+        </div>
     </div>
-  </div>
-</nav>
-
-
 </main>
 
 <footer></footer>
 </body>
 
+<!-- JavaScript for diet tracking -->
+<script>
+    $(document).ready(function() {
+        // Initialize variables to store diet data
+        let dietData = [];
+        let totalCalories = 0;
 
+        // Handle click event for adding food to the diet
+        $("#add-food").click(function() {
+            const foodItem = $("#food-item").val();
+            const calories = parseFloat($("#calories").val());
 
+            if (foodItem && !isNaN(calories)) {
+                // Add the food to the diet list
+                dietData.push({ foodItem, calories });
 
+                // Update the displayed diet list
+                updateDietList();
 
+                // Update the total calories
+                totalCalories += calories;
+                $("#total-calories").text(totalCalories);
 
+                // Clear the input fields
+                $("#food-item").val("");
+                $("#calories").val("");
+            }
+        });
 
+        // Function to update the displayed diet list
+        function updateDietList() {
+            const foodList = $("#food-list");
+            foodList.empty();
+
+            dietData.forEach(item => {
+                foodList.append(`<li>${item.foodItem}: ${item.calories} calories</li>`);
+            });
+        }
+    });
+</script>
 </html>
