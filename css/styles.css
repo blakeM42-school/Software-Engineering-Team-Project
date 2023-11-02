@@ -1,7 +1,8 @@
 /* Clears Default Style Rules*/
-h1, p {
+body, p, h1, h2, h3, div {
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 /* Navigator Style Rules */
@@ -127,6 +128,21 @@ h1, p {
 .general_image {
     width: 30em;
     height: 20em;
+}
+
+/* Homepage Styles*/
+.introduction {
+    text-align: center;
+}
+
+.introduction p {
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.introduction h2 {
+    border-top: 3px solid black;
 }
 
 /* Footer Style Rules */
