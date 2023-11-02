@@ -128,3 +128,19 @@ h1, p {
     width: 30em;
     height: 20em;
 }
+
+/* Footer Style Rules */
+footer {
+    border-top: 2px solid #333; 
+    background-color: #333;
+}
+
+.footer-content {
+display: flex;
+justify-content: space-around;
+}
+
+.footer-item {
+padding: 10px;
+padding-top: 25px;
+}
