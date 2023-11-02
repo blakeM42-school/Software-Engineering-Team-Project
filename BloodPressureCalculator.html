@@ -60,11 +60,11 @@
 	<p>Mean Arterial Pressure (MAP): <span id="result"></span> mmHg</p>
 	
 	<script>
-		function calculateMAP() [
+		function calculateMAP() {
 			var systolicPressure = parseFloat(document.gretElementById('systolic').value);
 			var diastolicPressure = parseFloat(document.gretElementById('diastolic').value);
 			
-			if (!isNaN(systolicPressure) && (!isNaN(diastolicPressure)) {
+			if (!isNaN(systolicPressure) && (!isNaN(diastolicPressure))) {
 				var map = (2 * diastolicPressure + systolicPressure) / 3;
 				document.getElementById('result').innerHTML = map.toFixed(2);
 			} else {
@@ -79,7 +79,20 @@
 
 
 
-<footer></footer>
+<div class = "footer-content">
+    <div class="footer-item">
+      <div id = "time-display">Loading...</div>
+      <script src="timezone.js"></script>
+    </div>
+    <div class="footer-item">Copyright 2024 &copy;</div>
+    <div class="footer-item">
+      <select name="language" id = "language">
+        <option value="light">English</option>
+        <option value="moderate">Spanish</option>
+      </select>
+    </div>
+  </div>
+</footer>
 
 
 </html>
