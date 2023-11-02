@@ -34,7 +34,7 @@
           </li>
           <li><a href="DietTracking.html">Diet Tracking</a></li>
           <li><a href="BreathingTechniques.html">Breathing Techniques</a></li>
-          <li><a href="BloodSugarCalculator.hmtl">Blood Sugar Calculator</a></li>
+          <li><a href="BloodPressureCalculator.hmtl">Blood Sugar Calculator</a></li>
           <li><a href="waterIntake.html">Water Intake</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -46,6 +46,7 @@
   </nav>
 
 <main>
+            <div class = "blankspace"><p></p></div>
             <h1 class = "centerheader">Water Intake Calculator</h1>
             <div class = "water">
             <form id="WaterIntakeForm">
@@ -67,18 +68,44 @@
             </div>
             <div id="result"></div>
 
-            <!-- <footer>
-              <div class="footer-content">
-                <div class="footer-item">Copyright 2024 &copy;</div>
-                <div class="footer-item">Email us at groupprojecthealth@gmail.com</div>
-                <div class="footer-item">Follow us on twitter!</div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer>
+              <div class = "footer-content">
+              <div class="footer-item">
+                <div id = "time-display">
+                Loading...
               </div>
-            </footer> -->
+              <script src="timezone.js"></script></div>
+                <div class="footer-item">Copyright 2024 &copy;</div>
+                <div class="footer-item"><select name="language" id = "language">
+                  <option value="light">English</option>
+                  <option value="moderate">Spanish</option>
+                </select></div>
+                </div>
+              </footer> 
           </body>
             <script>
+              function displayTime(){
+                function updateTime(){
+                const now = new Date();
+
+                const options = {timeZone: "America/Denver"};
+                const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12:true };
+                const formattedTime = now.toLocaleString('en-US', timeOptions);
+                document.getElementById("time-display").textContent = formattedTime + ", MDT"
+              }
+              updateTime();
+              setInterval(updateTime, 1000);
+            }
+              displayTime();
+
               document.getElementById('WaterIntakeForm').addEventListener('submit',function(event){
                 event.preventDefault();
-
                 const water = parseFloat(document.getElementById('water').value);
                 const weight = parseFloat(document.getElementById('weight').value);
                 const exercise = document.getElementById('exercise').value;
@@ -95,20 +122,26 @@
                     break;
 
                 }
-                const totalMore = water - weight/2;
+                totalMore = waterReq - water;
+
 
                 if(isNaN(water) || isNaN(weight)){
                   document.getElementById('result').textContent = "Please enter valid nubmers";
                 }
               if(water < waterReq){
-                document.getElementById('result').textContent="You need to drink more water. You've had "+water+" oz of water, and you need " + waterReq + "oz";
+                document.getElementById('result').textContent="You need to drink more water. You need "+totalMore + "oz";
               }
               if(water > waterReq){
                 document.getElementById('result').textContent="You've reached you're water intake! You needed "+ waterReq + "oz of water for today!";
               }
               if(water == 0){
-                document.getElementById('result').textContent="You've had no water today, consider drinking more!";
+                document.getElementById('result').textContent="You've had no water today";
               }
+
+              if(water < 0){
+                document.getElementById('result').textContent="Please enter a valid number!";
+              }
+
 
               divElement.style.textAlign = "center";
 
@@ -129,7 +162,9 @@
     margin: 10px auto;
 
   }
-
+  .blankspace{
+    padding-top: 140px;
+  }
   ul, ol{
     list-style: none;
     margin: 0;
@@ -162,6 +197,9 @@
   .footer-item{
     padding: 10px;
     padding-top: 25px;
+  }
+  .time-display{
+    color: #9D9D9D;
   }
 </style>
 
