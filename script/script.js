@@ -1,4 +1,3 @@
-<script>
     function displayTime(){
         function updateTime(){
             const now = new Date();
@@ -12,4 +11,3 @@
         setInterval(updateTime, 1000);
     }
     displayTime();
-</script>
