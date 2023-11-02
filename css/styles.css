@@ -1,4 +1,10 @@
+/* Clears Default Style Rules*/
+h1, p {
+    margin: 0;
+    padding: 0;
+}
 
+/* Navigator Style Rules */
 .navigator {
     padding: 0;
     margin: 0;
@@ -25,25 +31,87 @@
     display: flex;
 }
 
-.search_bar {
-    flex: 1;
-    padding: 20px;
-    background-color: lightblue;
-    border: 1px solid black;
-}
-
-.search_bar h1 {
-    margin: 0px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
 .search_bar input[type="text"] {
     width: auto;
     /* width: 80%; Adjust the width as needed */
     padding: 10px;
     align-items: center;
     
+}
+
+/* Nav Bar Rules*/
+.navbar.navbar-inverse {
+    margin-bottom: 0;
+}
+
+
+/* Sub-Search Bar Rules*/
+.navSub {
+    background-color: #393E41;
+}
+
+.navSub ul {
+    margin-bottom: 0;
+}
+
+.navSub li{
+    /* Makes the nav lin line*/
+    display: inline-block;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.navSub li a {
+    color: white;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.navSub li:hover {
+    background-color: #4c5357;
+}
+
+/* Main Content */
+.partitions {
+    display: flex;
+}
+
+.search_exercises {
+    flex: 1;
+    padding: 20px;
+    background-color: lightgrey;
+    /* border: 1px solid black; */
+
+}
+
+.search_exercises h1 {
+    margin: 0;
+}
+
+.search_exercises input[type="text"] {
+    width: auto;
+    /* width: 80%; Adjust the width as needed */
+    padding: 10px;
+}
+
+.search_bar {
+    border: none;
+}
+
+.search_results section {
+    border: 1px solid black;
+}
+
+.exName {
+    margin: 0px;
+}
+
+.exAttr {
+    font-size: .7em;
+    font-style: italic;
+}
+
+.exDesc {
+    font-size: .8em;
 }
 
 .content {
