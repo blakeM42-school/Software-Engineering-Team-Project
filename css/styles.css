@@ -143,6 +143,7 @@ body, p, h1, h2, h3, div {
 
 .introduction h2 {
     border-top: 3px solid black;
+    padding-top: 1em;
 }
 
 /* Footer Style Rules */
