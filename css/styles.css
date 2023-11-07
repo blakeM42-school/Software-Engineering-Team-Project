@@ -1,5 +1,5 @@
 /* Clears Default Style Rules*/
-body, p, h1, h2, h3, div {
+body, p, h1, h2, h3, div, img{
     margin: 0;
     padding: 0;
     border: 0;
@@ -53,6 +53,9 @@ body, p, h1, h2, h3, div {
 .navSub {
     background-color: #393E41;
     border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+
 }
 
 .navSub ul {
@@ -75,7 +78,7 @@ body, p, h1, h2, h3, div {
     background-color: #4c5357;
 }
 
-/* Main Content */
+/* Main Calisthenics Content */
 .partitions {
     display: flex;
 }
@@ -85,15 +88,24 @@ body, p, h1, h2, h3, div {
     padding: 20px;
     background-color: lightgrey;
     /* border: 1px solid black; */
-
+    max-width: 30%;
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 5%;
+    /* Trying to get the search and results bar to be sticky, but when it reaches the bottom when height is too much, */
+    max-height: 85vh;
 }
 
 .search_exercises h1 {
     margin: 0;
+    max-width: 90%;
+    font-size-adjust: 50%;
 }
 
 .search_exercises input[type="text"] {
     width: auto;
+    max-width: 90%;
     /* width: 80%; Adjust the width as needed */
     padding: 10px;
 }
@@ -125,14 +137,19 @@ body, p, h1, h2, h3, div {
     border-left: 1px solid black;
 }
 
+.content {
+    flex: 4;
+}
+
 .general_image {
-    width: 30em;
-    height: 20em;
+    max-width: 75%;
+    max-height: 75%;
 }
 
 /* Homepage Styles*/
 .introduction {
     text-align: center;
+    border-top: 3px solid black;
 }
 
 .introduction p {
@@ -142,9 +159,15 @@ body, p, h1, h2, h3, div {
 }
 
 .introduction h2 {
-    border-top: 3px solid black;
-    padding-top: 1em;
+    padding: .5em 0;
+    margin: .5em;
+    /* background-color: lightgrey; */
 }
+
+.intro_content {
+    padding-top: 0.5em;
+}
+
 
 /* Footer Style Rules */
 footer {
@@ -154,13 +177,13 @@ footer {
 }
 
 .footer-content {
-display: flex;
-justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 .footer-item {
-padding: 10px;
-padding-top: 25px;
+    padding: 10px;
+    padding-top: 25px;
 }
 
 .footer-item select {
