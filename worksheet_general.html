@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Group Project - Health</title>
   <meta charset="utf-8">
@@ -15,7 +16,7 @@
 
 <body>
   <header>
-  <h1 style="text-align: center">Health And Wellness</h1>
+    <h1 style="text-align: center">Health And Wellness</h1>
   </header>
   <main id="main_calisthenics">
     <nav class="navbar navbar-inverse">
@@ -24,7 +25,7 @@
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
+            <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="index.html">Health</a>
         </div>
@@ -47,77 +48,72 @@
 
   <nav class="navSub">
     <ul>
-        <li><a href="worksheet_general.html">General</a></li>
+      <li><a href="worksheet_general.html">General</a></li>
 
-        <li><a href="worksheet_chest.html">Chest</a></li>
+      <li><a href="worksheet_chest.html">Chest</a></li>
 
-        <li><a href="worksheet_shoulders.html">Shoulders</a></li>
+      <li><a href="worksheet_shoulders.html">Shoulders</a></li>
 
-        <li><a href="worksheet_back.html">Back</a></li>
+      <li><a href="worksheet_back.html">Back</a></li>
 
-        <li><a href="worksheet_abdominal.html">Abdominal</a></li>
+      <li><a href="worksheet_abdominal.html">Abdominal</a></li>
 
-        <li><a href="worksheet_arms.html">Arms</a></li>
+      <li><a href="worksheet_arms.html">Arms</a></li>
 
-        <li><a href="worksheet_legs.html">Legs</a></li>
+      <li><a href="worksheet_legs.html">Legs</a></li>
     </ul>
-</nav>
+  </nav>
 
-<div id="content-container">
-  <div id="left-container">
-    <div class="search_bar">
-      <h1>Exercises</h1>
-      <form>
+  <div id="content-container">
+    <div id="left-container">
+      <div class="search_bar">
+        <h1>Exercises</h1>
+        <form>
           <input type="text" placeholder="Search...">
-      </form>
+        </form>
+      </div>
+
+      <ul id="checklist">
+        <!-- Dynamically populated checklist -->
+      </ul>
+      <div id="button-container">
+        <button id="scroll-button">Top</button>
+        <button id="clear-button">Clear</button>
+        <button id="save-button">Save</button>
+      </div>
     </div>
 
-    <ul id="checklist">
-      <!-- Dynamically populated checklist -->
-    </ul>
-    <div id="button-container">
-      <button id="scroll-button">Top</button>
-      <button id="clear-button">Clear</button>
-      <button id="save-button">Save</button>
-    </div>       
-  </div>
-
-  <div id="right-container">
-    <h1>Full-Body</h1>
-    <table id="attribute-table">
-      <!-- Dynamically populated table -->
-    </table>
-    <br>
-  </div>
-  
-
-  
-
-
-</div>
-
-<footer>
-  <div class = "footer-content">
-    <div class="footer-item">
-      <div id = "time-display">Loading...</div>
-      <script src="scripts/timezone.js"></script>
+    <div id="right-container">
+      <h1>Full-Body</h1>
+      <table id="attribute-table">
+        <!-- Dynamically populated table -->
+      </table>
+      <br>
     </div>
-    <div class="footer-item">Copyright 2024 &copy;</div>
-    <div class="footer-item">
-      <select name="language" id = "language">
-        <option value="light">English</option>
-        <option value="moderate">Spanish</option>
-      </select>
-    </div>
+
+
+
+
+
   </div>
-</footer>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-item">
+        <div id="time-display">Loading...</div>
+        <script src="scripts/timezone.js"></script>
+      </div>
+      <div class="footer-item">Copyright 2024 &copy;</div>
+      <div class="footer-item">
+        <select name="language" id="language">
+          <option value="light">English</option>
+          <option value="moderate">Spanish</option>
+        </select>
+      </div>
+    </div>
+  </footer>
 
 </body>
-
-
-
-
-
 
 
 </html>
