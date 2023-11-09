@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Group Project - Health</title>
+    <title>Health and Wellness</title>
     <meta charset="utf-8">
     <link rel="icon" type="image/x-icon" href="apple.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +10,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="scripts/script.js"></script>
+    <style>
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+    </style>
 </head>
 
 <body>
@@ -55,16 +63,10 @@
     <button type="button" onclick="calculateBloodPressure()"><span id="calculateButtonLabel">Calculate</span></button>
 </form>
 	
-	<p>Mean Arterial Pressure (MAP): <span id="result"></span></p>
+	<p><b>Mean Arterial Pressure (MAP): <span id="result"></span></b></p>
+    <img src="images/bloodpressure.jpg" width="50%" alt="Blood Pressure Chart" class="center">
 
 </main>
-
-<label for="languageSelect">Select Language:</label>
-    <select id="languageSelect" onchange="changeLanguage(this.value)">
-        <option value="en">English</option>
-        <option value="ru">Русский</option>
-        <option value="es">Español</option>
-    </select>
 
     <script>
         let currentLanguage = 'en';
@@ -77,14 +79,6 @@
                 normalBP: 'Your blood pressure is normal.',
                 elevatedBP: 'Your blood pressure is elevated.',
                 highBP: 'Your blood pressure is high. Please consult a healthcare professional.'
-            },
-            ru: {
-                calculatorTitle: 'Калькулятор артериального давления',
-                instructions: 'Введите значения систолического и диастолического давления:',
-                calculateButtonLabel: 'Рассчитать',
-                normalBP: 'Ваше артериальное давление нормальное.',
-                elevatedBP: 'Ваше артериальное давление повышено.',
-                highBP: 'Ваше артериальное давление высокое. Пожалуйста, проконсультируйтесь с врачом.'
             },
             es: {
                 calculatorTitle: 'Calculadora de Presión Arterial',
@@ -149,6 +143,11 @@
     </div>
     <div class="footer-item">Copyright 2024 &copy;</div>
     <div class="footer-item">
+    <label for="languageSelect">Select Language:</label>
+    <select id="languageSelect" onchange="changeLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+    </select>
     </div>
   </div>
 </footer>
