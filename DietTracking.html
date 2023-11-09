@@ -1,95 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Group Project - Health</title>
-    <meta charset="utf-8">
-    <link rel="icon" type="image/x-icon" href="apple.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="scripts/script.js"></script>
-</head>
+    <head>
+        <title>Health And Wellness</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="apple.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="scripts/script.js"></script>
+    </head>
+
 <body>
   <header>
-    <h1 style="text-align: center">Health And Wellness</h1>
+    <h1 style="text-align: center" class="language" data-lang="en">Health And Wellness</h1>
+    <h1 style="text-align: center" class="language" data-lang="es" style="display: none">Salud y Bienestar</h1>
   </header>
 
-<main>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-        <a class="navbar-brand" href="index.html">Health</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class=""><a href="index.html">Home</a></li>
-          <li><a href="worksheet_general.html">Calisthenics</a></li>
-          <li class="active"><a href="DietTracking.html">Diet Tracking</a></li>
-          <li><a href="BreathingTechniques.html">Breathing Techniques</a></li>
-          <li><a href="BloodPressureCalculator.html">Blood Pressure Calculator</a></li>
-          <li><a href="waterIntake.html">Water Intake</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-    <div class="container">
-        <h2>Diet Tracking</h2>
-
-        <!-- Form for entering diet information -->
-        <form id="diet-form">
-            <div class="form-group">
-                <label for="food-item">Food Item</label>
-                <input type="text" class="form-control" id="food-item" placeholder="Enter food item">
-            </div>
-            <div class="form-group">
-                <label for="calories">Calories</label>
-                <input type="number" class="form-control" id="calories" placeholder="Enter calories">
-            </div>
-            <button type="button" class="btn btn-primary" id="add-food">Add Food</button>
-        </form>
-
-        <!-- Display the tracked diet -->
-        <div id="diet-tracker">
-            <h3>Your Diet Today</h3>
-            <ul id="food-list">
-                <!-- Diet items will be listed here -->
+  <main>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="index.html">Health</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="worksheet_general.html">Calisthenics</a></li>
+              <li class="active"><a href="DietTracking.html">Diet Tracking</a></li>
+              <li><a href="BreathingTechniques.html">Breathing Techniques</a></li>
+              <li><a href="BloodPressureCalculator.html">Blood Pressure Calculator</a></li>
+              <li><a href="waterIntake.html">Water Intake</a></li>
             </ul>
-            <p>Total Calories: <span id="total-calories">0</span></p>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
         </div>
+    </nav>
+
+    <h2 class="language" data-lang="en">Diet Tracking</h2>
+    <h2 class="language" data-lang="es" style="display: none;">Seguimiento de Dieta</h2>
+
+    <!-- Form for entering diet information -->
+    <form id="diet-form" class="language" data-lang="en">
+        <div class="form-group">
+            <label for="food-item">Food Item</label>
+            <input type="text" class="form-control" id="food-item" placeholder="Enter food item">
+        </div>
+        <div class="form-group">
+            <label for="calories">Calories</label>
+            <input type="number" class="form-control" id="calories" placeholder="Enter calories">
+        </div>
+        <button type="button" class="btn btn-primary" id="add-food">Add Food</button>
+    </form>
+
+    <form id="diet-form" class="language" data-lang="es" style="display: none;">
+        <div class="form-group">
+            <label for="food-item">Alimento</label>
+            <input type="text" class="form-control" id="food-item" placeholder="Ingresar alimento">
+        </div>
+        <div class="form-group">
+            <label for="calories">Calorías</label>
+            <input type="number" class "form-control" id="calories" placeholder="Ingresar calorías">
+        </div>
+        <button type="button" class="btn btn-primary" id="add-food">Agregar Alimento</button>
+    </form>
+
+    <!-- Display the tracked diet -->
+    <div id="diet-tracker">
+        <h3 class="language" data-lang="en">Your Diet Today</h3>
+        <h3 class="language" data-lang="es" style="display: none;">Tu Dieta Hoy</h3>
+        <ul id="food-list">
+            <!-- Diet items will be listed here -->
+        </ul>
+        <p class="language" data-lang="en">Total Calories: <span id="total-calories">0</span></p>
+        <p class="language" data-lang="es" style="display: none;">Calorías Totales: <span id="total-calories">0</span></p>
     </div>
 </main>
+  
 
-<footer>
-  <div class = "footer-content">
-    <div class="footer-item">
-      <div id = "time-display">Loading...</div>
-      <script src="scripts/timezone.js"></script>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-item">
+        <div id="time-display">Loading...</div>
+        <script src="scripts/timezone.js"></script>
+      </div>
+      <div class="footer-item language" data-lang="en">Copyright 2024 &copy;</div>
+      <div class="footer-item language" data-lang="es" style="display: none;">Derechos de autor 2024 &copy;</div>
+      <div class="footer-item">
+        <select name="language" id="language-select">
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+        </select>
+      </div>
     </div>
-    <div class="footer-item">Copyright 2024 &copy;</div>
-    <div class="footer-item">
-      <select name="language" id = "language">
-        <option value="light">English</option>
-        <option value="moderate">Spanish</option>
-      </select>
-    </div>
-  </div>
-</footer>
-</body>
+  </footer>
+  
+  <script>
+      // Function to change the language based on the selection
+      function changeLanguage(selectedLanguage) {
+          const languageElements = document.querySelectorAll(".language");
+          languageElements.forEach((element) => {
+              if (selectedLanguage === element.dataset.lang) {
+                  element.style.display = "block";
+              } else {
+                  element.style.display = "none";
+              }
+          });
+      }
+  
+      // Initial language setting based on the select dropdown
+      document.getElementById("language-select").addEventListener("change", function() {
+          const selectedLanguage = this.value;
+          changeLanguage(selectedLanguage);
+      });
+  
+      // Call the changeLanguage function with the initial selection
+      changeLanguage(document.getElementById("language-select").value);
 
-<!-- JavaScript for diet tracking -->
-<script>
+      <!-- JavaScript for diet tracking -->
+
     $(document).ready(function() {
         // Initialize variables to store diet data
         let dietData = [];
@@ -127,5 +164,7 @@
             });
         }
     });
-</script>
-</html>
+
+  </script>
+  </body>
+  </html>
