@@ -10,13 +10,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="scripts/script.js"></script>
+  <script src="script/scriptCalisthenics.js"></script>
 </head>
 
 <body>
   <header>
   <h1 style="text-align: center">Health And Wellness</h1>
   </header>
-  <main>
+  <main id="main_calisthenics">
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -62,51 +63,36 @@
     </ul>
 </nav>
 
-<div class="partitions">
-    <div class="search_exercises">
-        <div class="search_bar">
-            <h1>Exercises: </h1>
-            <form>
-                <input type="text" placeholder="Search...">
-            </form>
-            <hr>
-        </div>
-        <div class="search_results">
-            <section>
-                <h3 class="exName">Push-Ups</h3>
-                <p class="exAttr">Exercise Attributes</p>
-                <p class="exDesc">Exercise Description</p>
-            </section>
-            <section>
-                <h3 class="exName">Sit-Ups</h3>
-                <p class="exAttr">Exercise Attributes</p>
-                <p class="exDesc">Exercise Description</p>
-            </section>
-        </div>
-        
+<div id="content-container">
+  <div id="left-container">
+    <div class="search_bar">
+      <h1>Exercises</h1>
+      <form>
+          <input type="text" placeholder="Search...">
+      </form>
     </div>
 
-    <div class="content">
-        <h1>Body Map: </h1>
+    <ul id="checklist">
+      <!-- Dynamically populated checklist -->
+    </ul>
+    <div id="button-container">
+      <button id="scroll-button">Top</button>
+      <button id="clear-button">Clear</button>
+      <button id="save-button">Save</button>
+    </div>       
+  </div>
 
-        <h2>Chest</h2>
-        <img class="general_image"src="images/chest.jpg">
+  <div id="right-container">
+    <h1>Full-Body</h1>
+    <table id="attribute-table">
+      <!-- Dynamically populated table -->
+    </table>
+  </div>
+  
 
-        <h2>Shoulders</h2>
-        <img class="general_image"src="images/shoulders.jpg">
+  
 
-        <h2>Back</h2>
-        <img class="general_image"src="images/back.jpg">
 
-        <h2>Abdominal</h2>
-        <img class="general_image" src="images/abdominals.jpg">
-
-        <h2>Arms</h2>
-        <img class="general_image"src="images/arms.jpg">
-
-        <h2>Legs</h2>
-        <img class="general_image"src="images/legs.jpg">
-    </div>
 </div>
 
 <footer>

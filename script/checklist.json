@@ -1,0 +1,102 @@
+[
+    {"name": "Push-ups", "attributes": ["pectoralis major", "deltoids", "triceps", "serratus anterior", "anterior deltoids", "rectus abdominis"],  
+        "description": "", 
+        "checked": false
+    }, 
+    {"name": "Sit-ups", "attributes": ["rectus abdominis", "internal obliques", "external obliques", "transverse abdominis", "hip flexors"],  
+        "description": "", 
+        "checked": false
+    }, 
+    {"name": "Pull-ups", "attributes": ["latissimus dorsi (lats)", "biceps brachii", "brachialis", "brachioradialis", "trapezius (upper and middle)", "rhomboids", "levator scapulae", "deltoids (posterior)", "pectoralis major (sternal)", "serratus anterior"],  
+        "description": "", 
+        "checked": false
+    }, 
+    {"name": "Lunges", "attributes": ["quadriceps", "hamstrings", "gluteus maximus", "calves (gastrocnemius and soleus)"],  
+        "description": "", 
+        "checked": false
+    }, 
+    {"name": "Burpees", "attributes": ["quadriceps", "hamstrings", "gluteus maximus", "deltoids", "pectorals", "triceps", "rectus abdominis", "obliques (internal and external)", "transverse abdominis", "calves (gastrocnemius and soleus)"],  
+        "description": "", 
+        "checked": false
+    }, 
+    {"name": "Planks", "attributes": ["rectus abdominis", "obliques (internal and external)", "transverse abdominis", "erector spinae"],  
+        "description": "", 
+        "checked": false
+    }, 
+    {"name": "Squats", "attributes": ["quadriceps", "hamstrings", "gluteus maximus", "erector spinae"],  
+        "description": "", 
+        "checked": false
+    }, 
+    {"name": "Jumping Jacks", "attributes": ["quadriceps", "hamstrings", "calves (gastrocnemius and soleus)", "deltoids"],  
+        "description": "", 
+        "checked": false
+    }, 
+    {"name": "Leg Raises", "attributes": ["rectus abdominis", "hip flexors", "lower back (erector spinae)"],  
+        "description": "", 
+        "checked": false
+    }, 
+    {"name": "Russian Twists", "attributes": ["obliques (internal and external)", "rectus abdominis"],  
+        "description": "", 
+        "checked": false
+    }, 
+    {"name": "Supermans", "attributes": ["erector spinae", "gluteus maximus", "hamstrings"],  
+        "description": "", 
+        "checked": false
+    }, 
+    {"name": "Crunches", "attributes": ["rectus abdominis", "internal obliques", "external obliques"],  
+        "description": "", 
+        "checked": false
+    }, 
+    {"name": "Wall Sits", "attributes": ["quadriceps", "hamstrings", "gluteus maximus", "calves (gastrocnemius and soleus)"],  
+        "description": "", 
+        "checked": false
+    },
+    {"name": "Heel Raises", "attributes": ["calves (gastrocnemius and soleus)"],  
+    "description": "", 
+    "checked": false
+    }, 
+    {"name": "Arm Circles", "attributes": ["deltoids", "trapezius", "pectoralis major"],  
+    "description": "", 
+    "checked": false
+    }, 
+    {"name": "Headstands", "attributes": ["neck flexors", "deltoids", "trapezius", "rectus abdominis", "obliques (internal and external)", "transverse abdominis", "erector spinae"],  
+    "description": "", 
+    "checked": false
+    }, 
+    {"name": "Bridges", "attributes": ["gluteus maximus", "hamstrings", "erector spinae", "rectus abdominis", "hip flexors"],  
+    "description": "", 
+    "checked": false
+    }, 
+    {"name": "", "attributes": [],  
+    "description": "", 
+    "checked": false
+    }, 
+    {"name": "", "attributes": [],  
+    "description": "", 
+    "checked": false
+    }, 
+    {"name": "", "attributes": [],  
+    "description": "", 
+    "checked": false
+    }, 
+    {"name": "", "attributes": [],  
+    "description": "", 
+    "checked": false
+    }, 
+    {"name": "", "attributes": [],  
+    "description": "", 
+    "checked": false
+    }, 
+    {"name": "", "attributes": [],  
+    "description": "", 
+    "checked": false
+    }, 
+    {"name": "", "attributes": [],  
+    "description": "", 
+    "checked": false
+    }, 
+    {"name": "", "attributes": [],  
+        "description": "", 
+        "checked": false
+    }
+]

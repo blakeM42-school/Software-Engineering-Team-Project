@@ -55,6 +55,7 @@ body, p, h1, h2, h3, div, img{
     border-bottom: 1px solid black;
     position: sticky;
     top: 0;
+    z-index: 100;
 
 }
 
@@ -85,6 +86,11 @@ main {
     padding-bottom: 20px;
     overflow-y: auto; /* Add vertical scroll if the content overflows */
 }
+
+#main_calisthenics {
+    padding-bottom: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -93,71 +99,144 @@ body {
     min-height: 100vh;
 }
 
-.partitions {
-    display: flex;
-}
-
-.search_exercises {
-    flex: 1;
-    padding: 20px;
-    background-color: lightgrey;
-    /* border: 1px solid black; */
-    max-width: 30%;
-    overflow: hidden;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 5%;
-    /* Trying to get the search and results bar to be sticky, but when it reaches the bottom when height is too much, */
-    max-height: 85vh;
-}
-
-.search_exercises h1 {
-    margin: 0;
-    max-width: 90%;
-    font-size-adjust: 50%;
-}
-
-.search_exercises input[type="text"] {
-    width: auto;
-    max-width: 90%;
-    /* width: 80%; Adjust the width as needed */
-    padding: 10px;
+#left-container {
+    height: 85vh;
 }
 
 .search_bar {
-    border: none;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
-.search_results section {
-    border: 1px solid black;
+.search_bar h1 {
+    padding-left: 5%;
+    width: 90%;
+    font-size: 5vw;
 }
 
-.exName {
-    margin: 0px;
+.search_bar input[type="text"] {
+    width: auto;
+    width: 80%;
+    height: 10vw;
+    max-height: 30px;
 }
 
-.exAttr {
-    font-size: .7em;
+#content-container {
+    display: flex;
+    flex: 1;
+    /* overflow: hidden; */
+    background-color: #c0eaff;
+}
+
+#left-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #c0eaff;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 10%;
+}
+
+#checklist {
+    max-height: 90%;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 0px;
+    list-style: none;
+}
+
+#checklist::-webkit-scrollbar {
+    width: 10px;
+}
+
+#checklist::-webkit-scrollbar-track {
+    background-color: #c0eaff;
+}
+
+#checklist::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.checklist-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    /* margin-bottom: 10px; */
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.checklist-item h2 {
+    margin: 0;
+    padding: 0;
+    /* font-size: 4vw; */
+    font-size: clamp(10px, 4vw, 2em);
+    font-style: bold;
+}
+
+.checklist-item p {
+    /* Gonna wanna make italic whenever I manage to 
+    seperate the attribute from the description*/
+    font-size: clamp(5px, 1.5vw, 1em);
     font-style: italic;
 }
 
-.exDesc {
-    font-size: .8em;
+.selected {
+    background-color: lightblue;
 }
 
-.content {
-    flex: 3;
-    padding: 20px;
-    border-left: 1px solid black;
+#button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
 }
 
-.content {
-    flex: 4;
+#scroll-button, #clear-button, #save-button {
+    flex: 1;
+    /* width: 33%; Adjust the button width */
+    font-size: 14px; /* Adjust the font size */
+    font-size: 2vw;
 }
 
-.general_image {
-    max-width: 75%;
-    max-height: 75%;
+#right-container {
+    width: 70%;
+    padding-left: 10px;
+    border-left: 2px double black;
+    background-color: white;
+}
+
+#attribute-table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 2%;
+}
+
+#attribute-table .major-intensity {
+    background-color: lightgreen;
+    /* Add any other styles you want for a major intensity attribute */
+}
+
+#attribute-table .moderate-intensity {
+    background-color: lightblue;
+    /* Add any other styles you want for a moderate intensity attribute */
+}
+
+
+#attribute-table th, #attribute-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+#attribute-table th {
+    background-color: #f2f2f2;
+}
+
+#attribute-table tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
 /* Homepage Styles*/
