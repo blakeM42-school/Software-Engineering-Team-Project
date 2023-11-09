@@ -1,13 +1,13 @@
 [
-    {"name": "Push-ups", "attributes": ["pectoralis major", "deltoids", "triceps", "serratus anterior", "anterior deltoids", "rectus abdominis"],  
+    {"name": "Push-ups", "attributes": ["pectoralis major", "deltoids", "triceps", "serratus anterior", "deltoids (anterior)", "rectus abdominis"],  
         "description": "", 
         "checked": false
     }, 
-    {"name": "Sit-ups", "attributes": ["rectus abdominis", "internal obliques", "external obliques", "transverse abdominis", "hip flexors"],  
+    {"name": "Sit-ups", "attributes": ["rectus abdominis", "obliques", "obliques (internal)", "obliques (external)", "transverse abdominis", "hip flexors"],  
         "description": "", 
         "checked": false
     }, 
-    {"name": "Pull-ups", "attributes": ["latissimus dorsi (lats)", "biceps brachii", "brachialis", "brachioradialis", "trapezius (upper and middle)", "rhomboids", "levator scapulae", "deltoids (posterior)", "pectoralis major (sternal)", "serratus anterior"],  
+    {"name": "Pull-ups", "attributes": ["latissimus dorsi (lats)", "biceps brachii", "brachialis", "brachioradialis", "trapezius (upper and middle)", "rhomboids", "levator scapulae", "deltoids (posterior)", "pectoralis major", "serratus anterior"],  
         "description": "", 
         "checked": false
     }, 
@@ -15,11 +15,11 @@
         "description": "", 
         "checked": false
     }, 
-    {"name": "Burpees", "attributes": ["quadriceps", "hamstrings", "gluteus maximus", "deltoids", "pectorals", "triceps", "rectus abdominis", "obliques (internal and external)", "transverse abdominis", "calves (gastrocnemius and soleus)"],  
+    {"name": "Burpees", "attributes": ["quadriceps", "hamstrings", "gluteus maximus", "deltoids", "pectorals", "triceps", "rectus abdominis", "obliques", "obliques (internal)", "obliques (external)", "transverse abdominis", "calves (gastrocnemius and soleus)"],  
         "description": "", 
         "checked": false
     }, 
-    {"name": "Planks", "attributes": ["rectus abdominis", "obliques (internal and external)", "transverse abdominis", "erector spinae"],  
+    {"name": "Planks", "attributes": ["rectus abdominis", "obliques", "obliques (internal)", "obliques (external)", "transverse abdominis", "erector spinae"],  
         "description": "", 
         "checked": false
     }, 
@@ -31,11 +31,11 @@
         "description": "", 
         "checked": false
     }, 
-    {"name": "Leg Raises", "attributes": ["rectus abdominis", "hip flexors", "lower back (erector spinae)"],  
+    {"name": "Leg Raises", "attributes": ["rectus abdominis", "hip flexors", "erector spinae"],  
         "description": "", 
         "checked": false
     }, 
-    {"name": "Russian Twists", "attributes": ["obliques (internal and external)", "rectus abdominis"],  
+    {"name": "Russian Twists", "attributes": ["obliques", "obliques (internal)", "obliques (external)", "rectus abdominis"],  
         "description": "", 
         "checked": false
     }, 
@@ -43,7 +43,7 @@
         "description": "", 
         "checked": false
     }, 
-    {"name": "Crunches", "attributes": ["rectus abdominis", "internal obliques", "external obliques"],  
+    {"name": "Crunches", "attributes": ["rectus abdominis", "obliques", "obliques (internal)", "obliques (external)"],  
         "description": "", 
         "checked": false
     }, 
@@ -52,38 +52,30 @@
         "checked": false
     },
     {"name": "Heel Raises", "attributes": ["calves (gastrocnemius and soleus)"],  
-    "description": "", 
-    "checked": false
+        "description": "", 
+        "checked": false
     }, 
     {"name": "Arm Circles", "attributes": ["deltoids", "trapezius", "pectoralis major"],  
-    "description": "", 
-    "checked": false
+        "description": "", 
+        "checked": false
     }, 
-    {"name": "Headstands", "attributes": ["neck flexors", "deltoids", "trapezius", "rectus abdominis", "obliques (internal and external)", "transverse abdominis", "erector spinae"],  
-    "description": "", 
-    "checked": false
+    {"name": "Headstands", "attributes": ["neck flexors", "deltoids", "trapezius", "rectus abdominis", "obliques", "obliques (internal)", "obliques (external)", "transverse abdominis", "erector spinae"],  
+        "description": "", 
+        "checked": false
     }, 
     {"name": "Bridges", "attributes": ["gluteus maximus", "hamstrings", "erector spinae", "rectus abdominis", "hip flexors"],  
-    "description": "", 
-    "checked": false
+        "description": "", 
+        "checked": false
     }, 
-    {"name": "Wall Handstand", "attributes": ["deltoids", "triceps brachii", "trapezius", "rectus abdominis", "obliques", "transverse abdominis", "wrist flexors and extensors", "forearm muscles", "erector spinae", "hip flexors", "quadriceps", "hamstrings", "gluteus maximus"],  
-    "description": "", 
-    "checked": false
+    {"name": "Wall Handstand", "attributes": ["deltoids", "triceps brachii", "trapezius", "rectus abdominis", "obliques", "obliques (internal)", "obliques (external)", "transverse abdominis", "wrist flexors and extensors", "erector spinae", "hip flexors", "quadriceps", "hamstrings", "gluteus maximus"],  
+        "description": "", 
+        "checked": false
     }, 
     {"name": "Leg Scissors", "attributes": ["quadriceps", "hamstrings", "hip flexors"],  
-    "description": "", 
-    "checked": false
+        "description": "", 
+        "checked": false
     }, 
-    {"name": "Hula Hooping", "attributes": ["rectus abdominis", "obliques (internal and external)", "transverse abdominis", "hip flexors"],  
-    "description": "", 
-    "checked": false
-    }, 
-    {"name": "", "attributes": [],  
-    "description": "", 
-    "checked": false
-    }, 
-    {"name": "", "attributes": [],  
+    {"name": "Hula Hooping", "attributes": ["rectus abdominis", "obliques", "obliques (internal)", "obliques (external)", "transverse abdominis", "hip flexors"],  
         "description": "", 
         "checked": false
     }
