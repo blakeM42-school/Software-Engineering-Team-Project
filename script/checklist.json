@@ -15,7 +15,7 @@
         "description": "", 
         "checked": false
     }, 
-    {"name": "Burpees", "attributes": ["quadriceps", "hamstrings", "gluteus maximus", "deltoids", "pectorals", "triceps", "rectus abdominis", "obliques", "obliques (internal)", "obliques (external)", "transverse abdominis", "calves (gastrocnemius and soleus)"],  
+    {"name": "Burpees", "attributes": ["quadriceps", "hamstrings", "gluteus maximus", "deltoids", "pectoralis major", "pectoralis minor", "triceps", "rectus abdominis", "obliques", "obliques (internal)", "obliques (external)", "transverse abdominis", "calves (gastrocnemius and soleus)"],  
         "description": "", 
         "checked": false
     }, 
