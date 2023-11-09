@@ -166,6 +166,13 @@ document.addEventListener("DOMContentLoaded", function () {
             selectedItem.dataset.selected = "false";
         });
 
+        searchBar.value = "";
+
+        const items = document.querySelectorAll(".checklist-item");
+        items.forEach(item => {
+            item.style.display = "block";
+        });
+
         // Update attribute counts and table
         updateAttributeCounts();
     });

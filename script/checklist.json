@@ -67,27 +67,15 @@
     "description": "", 
     "checked": false
     }, 
-    {"name": "", "attributes": [],  
+    {"name": "Wall Handstand", "attributes": ["deltoids", "triceps brachii", "trapezius", "rectus abdominis", "obliques", "transverse abdominis", "wrist flexors and extensors", "forearm muscles", "erector spinae", "hip flexors", "quadriceps", "hamstrings", "gluteus maximus"],  
     "description": "", 
     "checked": false
     }, 
-    {"name": "", "attributes": [],  
+    {"name": "Leg Scissors", "attributes": ["quadriceps", "hamstrings", "hip flexors"],  
     "description": "", 
     "checked": false
     }, 
-    {"name": "", "attributes": [],  
-    "description": "", 
-    "checked": false
-    }, 
-    {"name": "", "attributes": [],  
-    "description": "", 
-    "checked": false
-    }, 
-    {"name": "", "attributes": [],  
-    "description": "", 
-    "checked": false
-    }, 
-    {"name": "", "attributes": [],  
+    {"name": "Hula Hooping", "attributes": ["rectus abdominis", "obliques (internal and external)", "transverse abdominis", "hip flexors"],  
     "description": "", 
     "checked": false
     }, 
