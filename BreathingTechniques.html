@@ -8,12 +8,10 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="scripts/script.js"></script>
-<style>
-
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="scripts/script.js"></script>
+ <style>
 .flip{
 	font-size: 16px;
 	padding: 5px;
@@ -53,77 +51,64 @@
  </style>
 </head>
 
+
 <body>
   <header>
     <h1 style="text-align: center">Health And Wellness</h1>
   </header>
 
-  <main>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-          </button>
-          <a class="navbar-brand" href="index.html">Health</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li class=""><a href="index.html">Home</a></li>
-            <li><a href="worksheet_general.html">Calisthenics</a></li>
-            <li><a href="DietTracking.html">Diet Tracking</a></li>
-            <li class="active"><a href="BreathingTechniques.html">Breathing Techniques</a></li>
-            <li><a href="BloodPressureCalculator.html">Blood Pressure Calculator</a></li>
-            <li><a href="waterIntake.html">Water Intake</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    
-    <p class="flip" onclick="myFunction()">Click to try: "Equal Breathing (Sama Vritti in Sanskrit)"</p>
-    <div id="animation">
+<main>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Health</a>
     </div>
-    
-    <script>
-    function myFunction(){
-        document.getElementById("animation").style.display = "block";
-    }
-    </script>
-    
-    </main>
-
-  <footer>
-    <div class="footer-content">
-      <div class="footer-item">
-        <div id="time-display">Loading...</div>
-        <script src="scripts/timezone.js"></script>
-      </div>
-      <div class="footer-item">Copyright 2024 &copy;</div>
-      <div class="footer-item">
-        <select name="language" id="language" onchange="changeLanguage(this)">
-          <option value="en">English</option>
-          <option value="es">Spanish</option>
-        </select>
-      </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class=""><a href="index.html">Home</a></li>
+        <li><a href="worksheet_general.html">Calisthenics</a></li>
+        <li><a href="DietTracking.html">Diet Tracking</a></li>
+        <li class="active"><a href="BreathingTechniques.html">Breathing Techniques</a></li>
+        <li><a href="BloodPressureCalculator.html">Blood Pressure Calculator</a></li>
+        <li><a href="waterIntake.html">Water Intake</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
     </div>
-  </footer>
+  </div>
+</nav>
 
-  <script>
-    function changeLanguage(selectElement) {
-      var selectedLanguage = selectElement.value;
-      // You can add logic here to change content based on the selected language.
-      if (selectedLanguage === "en") {
-        // Change content to English
-      } else if (selectedLanguage === "es") {
-        // Change content to Spanish
-      }
-    }
-  </script>
+<p class="flip" onclick="myFunction()">Click to try: "Equal Breathing (Sama Vritti in Sanskrit)"</p>
+<div id="animation">
+</div>
+
+<script>
+function myFunction(){
+	document.getElementById("animation").style.display = "block";
+}
+</script>
+
+</main>
+
+<footer>
+  <div class = "footer-content">
+    <div class="footer-item">
+      <div id = "time-display">Loading...</div>
+      <script src="scripts/timezone.js"></script>
+    </div>
+    <div class="footer-item">Copyright 2024 &copy;</div>
+    <div class="footer-item">
+    </div>
+  </div>
+</footer>
 </body>
+
+
 </html>
