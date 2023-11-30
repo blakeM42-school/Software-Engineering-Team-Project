@@ -143,6 +143,16 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    const searchForm = document.querySelector(".search_bar form");
+
+    searchForm.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        // Continue with your existing logic for filtering exercises
+        const searchQuery = searchBar.value.trim();
+        filterExercises(searchQuery);
+    });
+
     searchBar.addEventListener("input", () => {
         const searchQuery = searchBar.value.trim();
         filterExercises(searchQuery);
